@@ -18,9 +18,19 @@
                 <li>Use 'res.write('the text') to write to the response</li>
                 <li>End the response with 'res.end()'</li>
                 <li>****** ******</li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Create 'Views' folder and create index.html inside.</li>
+                <li>Use 'require' to require 'fs' module. Put this in a 'const'</li>
+                <li>use: 
+                    'fs.readFile('./views/index.html',(err,data)=>{
+                        if(err){
+                            console.log(err)
+                        }else{
+                            res.write(data);
+                            res.end();
+                        }
+                    })
+
+                </li>
             </ol>
         </div>
     </body>
